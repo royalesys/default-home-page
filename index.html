@@ -10,13 +10,31 @@ body, html {
   height: 100%;
   margin: 0;
 }
-
 .background {
-  background-image: url("image.jpg");
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: slide 16s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  background-image: url('image.jpg');
+}
+@keyframes slide {
+    0% {
+        background-image: url('image.jpg');
+    }
+    25% {
+        background-image: url('image2.jpg');
+    }
+	50% {
+		background-image: url('image3.jpg');
+	}
+    75% {
+		background-image: url('image4.jpg');
+	}
+	100% {
+		background-image: url('image.jpg');
+	}
 }
 </style>
 </head>
